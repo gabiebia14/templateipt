@@ -2,61 +2,61 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
-// Sample equipment data
+// Dados de exemplo para produtos de concreto
 const equipmentData = [
   {
     id: 1,
-    name: "Excavator XC-340",
-    category: "excavators",
-    image: "https://images.unsplash.com/photo-1603584915335-fb3104d33eeb?q=80&w=2069&auto=format&fit=crop",
-    description: "High-performance excavator for heavy-duty construction projects."
+    name: "Blocos de Concreto",
+    category: "blocos",
+    image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2070&auto=format&fit=crop",
+    description: "Blocos de concreto estrutural para construção de paredes e muros."
   },
   {
     id: 2,
-    name: "Bulldozer BD-1000",
-    category: "bulldozers",
-    image: "https://images.unsplash.com/photo-1573733185815-c1f81f3dfcf8?q=80&w=2070&auto=format&fit=crop",
-    description: "Powerful bulldozer designed for earthmoving operations."
+    name: "Postes de Concreto",
+    category: "postes",
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop",
+    description: "Postes de concreto para iluminação e distribuição elétrica."
   },
   {
     id: 3,
-    name: "Wheel Loader WL-500",
-    category: "loaders",
-    image: "https://images.unsplash.com/photo-1567527259232-3954b27aa2c4?q=80&w=2070&auto=format&fit=crop",
-    description: "Efficient wheel loader for material handling and loading."
+    name: "Tubos de Concreto",
+    category: "tubos",
+    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=2070&auto=format&fit=crop",
+    description: "Tubos de concreto para drenagem e esgotamento sanitário."
   },
   {
     id: 4,
-    name: "Crane CR-2000",
-    category: "cranes",
-    image: "https://images.unsplash.com/photo-1481081224709-48e2a1a111d1?q=80&w=2069&auto=format&fit=crop",
-    description: "High-capacity crane for lifting heavy construction materials."
+    name: "Pavers de Concreto",
+    category: "pavers",
+    image: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=2070&auto=format&fit=crop",
+    description: "Pavers de concreto para pavimentação de calçadas e áreas externas."
   },
   {
     id: 5,
-    name: "Forklift FL-200",
-    category: "forklifts",
-    image: "https://images.unsplash.com/photo-1580901368919-7738efb0f87e?q=80&w=1932&auto=format&fit=crop",
-    description: "Versatile forklift for warehouse and construction operations."
+    name: "Lajes e Pré-moldados",
+    category: "lajes",
+    image: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?q=80&w=2070&auto=format&fit=crop",
+    description: "Lajes e elementos pré-moldados de concreto para construção civil."
   },
   {
     id: 6,
-    name: "Dump Truck DT-800",
-    category: "trucks",
-    image: "https://images.unsplash.com/photo-1501003878151-d3cb87799705?q=80&w=2070&auto=format&fit=crop",
-    description: "Heavy-duty dump truck for transporting construction materials."
+    name: "Guias e Sarjetas",
+    category: "guias",
+    image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?q=80&w=2070&auto=format&fit=crop",
+    description: "Guias e sarjetas de concreto para infraestrutura urbana."
   }
 ];
 
-// Categories
+// Categorias
 const categories = [
-  { id: "all", name: "All Equipment" },
-  { id: "excavators", name: "Excavators" },
-  { id: "bulldozers", name: "Bulldozers" },
-  { id: "loaders", name: "Loaders" },
-  { id: "cranes", name: "Cranes" },
-  { id: "forklifts", name: "Forklifts" },
-  { id: "trucks", name: "Trucks" },
+  { id: "all", name: "Todos os Produtos" },
+  { id: "blocos", name: "Blocos" },
+  { id: "postes", name: "Postes" },
+  { id: "tubos", name: "Tubos" },
+  { id: "pavers", name: "Pavers" },
+  { id: "lajes", name: "Lajes e Pré-moldados" },
+  { id: "guias", name: "Guias e Sarjetas" },
 ];
 
 const Equipment = () => {
@@ -70,10 +70,10 @@ const Equipment = () => {
     <section className="section-padding bg-machinery-gray-light" id="equipment">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Our <span className="text-machinery-yellow">Equipment</span></h2>
+          <h2 className="mb-4">Nossos <span className="text-machinery-yellow">Produtos</span></h2>
           <p className="text-machinery-gray max-w-3xl mx-auto">
-            Explore our wide range of high-quality heavy machinery and equipment designed 
-            for construction, mining, and industrial applications.
+            Explore nossa ampla gama de artefatos de concreto de alta qualidade projetados 
+            para construção civil, infraestrutura urbana e aplicações industriais.
           </p>
         </div>
 
@@ -108,7 +108,7 @@ const Equipment = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-machinery-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="btn-primary rounded">View Details</button>
+                  <button className="btn-primary rounded">Ver Detalhes</button>
                 </div>
               </div>
               <div className="p-6">
@@ -118,7 +118,7 @@ const Equipment = () => {
                   href="#" 
                   className="inline-flex items-center gap-2 text-machinery-black font-bold hover:text-machinery-yellow transition-colors duration-300"
                 >
-                  Learn More <ArrowRight className="h-4 w-4" />
+                  Saiba Mais <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
             </div>
@@ -127,7 +127,7 @@ const Equipment = () => {
 
         <div className="text-center mt-12">
           <button className="btn-primary rounded-full">
-            View All Equipment
+            Ver Todos os Produtos
           </button>
         </div>
       </div>
