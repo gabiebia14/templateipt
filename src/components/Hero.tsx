@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
@@ -8,7 +9,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('/lovable-uploads/b33235f8-4236-4dd3-b5b6-81b94af912e5.png')",
+          backgroundImage: "url('/lovable-uploads/77bc573a-c2ad-426f-8b7b-45e3d682c6ed.png')",
           filter: "brightness(50%)"
         }}
       />
@@ -36,6 +37,7 @@ const Hero = () => {
         </div>
       </div>
       
+      {/* Stats Banner */}
       <div className="absolute bottom-0 left-0 right-0 bg-machinery-black bg-opacity-90 py-6">
         <div className="container-custom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="animate-fade-in" style={{ animationDelay: "600ms" }}>
