@@ -37,8 +37,8 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Stats Banner */}
-      <div className="absolute bottom-0 left-0 right-0 bg-machinery-black bg-opacity-90 py-6">
+      {/* Stats Banner - fixed positioning to ensure it stays at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 bg-machinery-black py-6 z-10">
         <div className="container-custom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="animate-fade-in" style={{ animationDelay: "600ms" }}>
             <h3 className="text-machinery-yellow text-4xl font-bold">25+</h3>
