@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
@@ -9,8 +8,8 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2070&auto=format&fit=crop')",
-          filter: "brightness(50%)"
+          backgroundImage: "url('/lovable-uploads/1745526636562_image.jpg')",
+          filter: "brightness(65%)"
         }}
       />
       
@@ -37,7 +36,6 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Stats Banner - fixed positioning to ensure it stays at bottom */}
       <div className="absolute bottom-0 left-0 right-0 bg-machinery-black py-6 z-10">
         <div className="container-custom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="animate-fade-in" style={{ animationDelay: "600ms" }}>
