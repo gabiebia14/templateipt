@@ -4,17 +4,18 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen bg-machinery-black">
+    <section className="relative h-screen bg-transparent">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
           backgroundImage: "url('/lovable-uploads/d5b56a5c-2247-4c10-8887-e6e48086d73f.png')",
-          filter: "brightness(50%)"
+          filter: "brightness(60%)"
         }}
       />
       
-      <div className="absolute inset-0 bg-gradient-to-r from-machinery-black/90 via-machinery-black/70 to-transparent">
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-machinery-black/80 via-machinery-black/60 to-transparent">
         <div className="container-custom h-full flex items-center">
           <div className="max-w-2xl pt-20">
             <h1 className="text-white mb-6 animate-fade-in">
