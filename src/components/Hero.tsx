@@ -4,18 +4,17 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen bg-transparent">
+    <section className="relative h-screen bg-machinery-black">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('/lovable-uploads/d5b56a5c-2247-4c10-8887-e6e48086d73f.png')",
-          filter: "brightness(60%)"
+          backgroundImage: "url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2070&auto=format&fit=crop')",
+          filter: "brightness(50%)"
         }}
       />
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-machinery-black/80 via-machinery-black/60 to-transparent">
+      <div className="absolute inset-0 bg-gradient-to-r from-machinery-black/90 via-machinery-black/70 to-transparent">
         <div className="container-custom h-full flex items-center">
           <div className="max-w-2xl pt-20">
             <h1 className="text-white mb-6 animate-fade-in">
@@ -38,8 +37,8 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Stats Banner */}
-      <div className="absolute bottom-0 left-0 right-0 bg-machinery-black bg-opacity-90 py-6">
+      {/* Stats Banner - fixed positioning to ensure it stays at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 bg-machinery-black py-6 z-10">
         <div className="container-custom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="animate-fade-in" style={{ animationDelay: "600ms" }}>
             <h3 className="text-machinery-yellow text-4xl font-bold">25+</h3>
