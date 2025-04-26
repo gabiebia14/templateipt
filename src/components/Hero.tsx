@@ -1,15 +1,16 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen bg-black">
+    <section className="relative h-screen">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
           backgroundImage: "url('/lovable-uploads/1745526636562_image.jpg')",
-          filter: "brightness(50%)"
+          filter: "brightness(65%)"
         }}
       />
       
@@ -61,3 +62,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
