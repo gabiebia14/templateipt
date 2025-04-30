@@ -1,10 +1,11 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 const Hero = () => {
   return <section className="img">
       {/* Background Image */}
       <div style={{
-      backgroundImage: "url('/lovable-uploads/1745526636562_image.jpg')",
+      backgroundImage: "url('/lovable-uploads/f29daa21-e5f6-4648-8822-b4c8baba862b.png')",
       filter: "brightness(65%)"
     }} className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-transparent" />
       
