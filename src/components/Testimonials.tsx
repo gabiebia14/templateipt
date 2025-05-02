@@ -2,31 +2,31 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
-// Dados de depoimentos de clientes da IPT TEIXEIRA
+// Sample testimonial data
 const testimonialData = [
   {
     id: 1,
-    name: "Paulo Rodrigues",
-    position: "Gerente de Manutenção",
-    company: "Indústria Metalúrgica S/A",
+    name: "John Smith",
+    position: "Construction Manager",
+    company: "Smith Construction Co.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
-    quote: "A consultoria da IPT TEIXEIRA transformou completamente nossa gestão de ativos. Conseguimos reduzir em 30% os custos de manutenção enquanto aumentamos a disponibilidade dos equipamentos."
+    quote: "ASPRO Machinery has been our trusted partner for over a decade. Their equipment quality is unmatched, and their customer service goes above and beyond our expectations."
   },
   {
     id: 2,
-    name: "Mariana Silva",
-    position: "Diretora de Operações",
-    company: "Grupo Industrial Brasileiro",
+    name: "Sarah Johnson",
+    position: "Project Director",
+    company: "Johnson & Partners",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
-    quote: "Os treinamentos ministrados pela equipe da IPT TEIXEIRA elevaram significativamente o nível técnico de nossa equipe. Agora temos autonomia para implementar as melhores práticas em gestão de ativos."
+    quote: "We've relied on ASPRO's machinery for several major projects, and they've never let us down. Their team's expertise and commitment to excellence is remarkable."
   },
   {
     id: 3,
-    name: "Carlos Mendes",
-    position: "Coordenador de Manutenção",
-    company: "Energia Sustentável Ltda.",
+    name: "Michael Brown",
+    position: "Operations Manager",
+    company: "Brown Industrial Inc.",
     image: "https://randomuser.me/api/portraits/men/62.jpg",
-    quote: "A implementação do programa de manutenção preditiva desenvolvido pela IPT TEIXEIRA nos permitiu identificar falhas potenciais antes que se tornassem problemas críticos, evitando paradas não programadas."
+    quote: "The quality and reliability of ASPRO's equipment have significantly improved our operational efficiency. Their maintenance service is prompt and professional."
   }
 ];
 
@@ -57,10 +57,10 @@ const Testimonials = () => {
       
       <div className="container-custom relative z-10">
         <div className="text-center mb-16">
-          <h2 className="mb-4">O Que Nossos <span className="text-machinery-yellow">Clientes Dizem</span></h2>
+          <h2 className="mb-4">What Our <span className="text-machinery-yellow">Clients Say</span></h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Veja como nossas soluções têm ajudado empresas de diversos segmentos a 
-            otimizar seus processos e aumentar sua produtividade.
+            We take pride in delivering exceptional service and equipment solutions that meet 
+            and exceed our clients' expectations.
           </p>
         </div>
 

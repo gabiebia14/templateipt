@@ -10,13 +10,13 @@ const About = () => {
         <div className="relative">
           <div className="rounded-lg overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop" 
-              alt="IPT TEIXEIRA engenharia e consultoria" 
+              src="https://images.unsplash.com/photo-1496307653780-42ee777d4833?q=80&w=2070&auto=format&fit=crop" 
+              alt="Fábrica de artefatos de concreto" 
               className="w-full h-auto object-cover rounded-lg"
             />
           </div>
           <div className="absolute -bottom-8 -right-8 bg-machinery-yellow text-machinery-black p-8 rounded-lg hidden md:block">
-            <div className="text-5xl font-bold">15+</div>
+            <div className="text-5xl font-bold">25+</div>
             <div className="text-xl font-medium">Anos de Experiência</div>
           </div>
         </div>
@@ -26,14 +26,16 @@ const About = () => {
           <div className="inline-block px-4 py-2 bg-machinery-yellow/20 rounded-full text-machinery-yellow font-bold mb-4">
             SOBRE NOSSA EMPRESA
           </div>
-          <h2 className="mb-6">Experiência em <span className="text-machinery-yellow">Consultoria Técnica</span> e Engenharia</h2>
+          <h2 className="mb-6">Fornecemos <span className="text-machinery-yellow">Artefatos de Concreto</span> de Qualidade Superior</h2>
           <p className="text-machinery-gray mb-6">
-            A IPT TEIXEIRA tem como foco a excelência em soluções para gestão de ativos físicos, 
-            contando com especialistas altamente qualificados e vasta experiência no mercado.
+            Com mais de 25 anos de experiência no setor, nossa empresa se estabeleceu como 
+            líder no fornecimento de artefatos de concreto para construção civil, infraestrutura 
+            urbana e aplicações industriais em todo o Brasil.
           </p>
           <p className="text-machinery-gray mb-8">
-            Nossa equipe é formada por profissionais com certificações internacionais e experiência 
-            prática, proporcionando soluções que agregam valor real para nossos clientes em diversos setores.
+            Temos orgulho em oferecer produtos de concreto de alta qualidade, atendimento 
+            excepcional ao cliente e soluções inovadoras adaptadas para atender às necessidades 
+            específicas dos nossos clientes.
           </p>
 
           {/* Features */}
@@ -41,35 +43,35 @@ const About = () => {
             <div className="flex items-start gap-3">
               <CheckCircle className="h-6 w-6 text-machinery-yellow flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-bold text-lg">Consultoria Especializada</h4>
-                <p className="text-machinery-gray">Soluções personalizadas para gestão de ativos físicos.</p>
+                <h4 className="font-bold text-lg">Produtos de Qualidade</h4>
+                <p className="text-machinery-gray">Artefatos de concreto de alto desempenho para projetos exigentes.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <CheckCircle className="h-6 w-6 text-machinery-yellow flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-bold text-lg">Equipe Certificada</h4>
-                <p className="text-machinery-gray">Profissionais com certificações internacionais.</p>
+                <h4 className="font-bold text-lg">Equipe Especializada</h4>
+                <p className="text-machinery-gray">Profissionais qualificados com anos de experiência no setor.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <CheckCircle className="h-6 w-6 text-machinery-yellow flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-bold text-lg">Resultados Comprovados</h4>
-                <p className="text-machinery-gray">Projetos com alto retorno sobre investimento.</p>
+                <h4 className="font-bold text-lg">Suporte 24/7</h4>
+                <p className="text-machinery-gray">Assistência contínua para todas as suas necessidades.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <CheckCircle className="h-6 w-6 text-machinery-yellow flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-bold text-lg">Tecnologia Avançada</h4>
-                <p className="text-machinery-gray">Ferramentas de última geração para análise e diagnóstico.</p>
+                <h4 className="font-bold text-lg">Preços Competitivos</h4>
+                <p className="text-machinery-gray">Soluções acessíveis sem comprometer a qualidade.</p>
               </div>
             </div>
           </div>
 
           <button className="btn-primary flex items-center gap-2 rounded">
-            Conheça Nossa História <ArrowRight className="h-5 w-5" />
+            Saiba Mais Sobre Nós <ArrowRight className="h-5 w-5" />
           </button>
         </div>
       </div>
