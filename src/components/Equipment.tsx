@@ -2,61 +2,61 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
-// Dados de exemplo para produtos de concreto
+// Dados para serviços da IPT TEIXEIRA
 const equipmentData = [
   {
     id: 1,
-    name: "Blocos de Concreto",
-    category: "blocos",
-    image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=2070&auto=format&fit=crop",
-    description: "Blocos de concreto estrutural para construção de paredes e muros."
+    name: "Gestão de Ativos",
+    category: "gestao",
+    image: "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?q=80&w=2070&auto=format&fit=crop",
+    description: "Consultoria completa em gestão de ativos físicos segundo a ISO 55000."
   },
   {
     id: 2,
-    name: "Postes de Concreto",
-    category: "postes",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070&auto=format&fit=crop",
-    description: "Postes de concreto para iluminação e distribuição elétrica."
+    name: "Engenharia de Confiabilidade",
+    category: "confiabilidade",
+    image: "https://images.unsplash.com/photo-1581092160607-ee22732de548?q=80&w=2070&auto=format&fit=crop",
+    description: "Análise e implementação de estratégias para maximizar a confiabilidade dos equipamentos."
   },
   {
     id: 3,
-    name: "Tubos de Concreto",
-    category: "tubos",
-    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=2070&auto=format&fit=crop",
-    description: "Tubos de concreto para drenagem e esgotamento sanitário."
+    name: "Manutenção Preditiva",
+    category: "preditiva",
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2070&auto=format&fit=crop",
+    description: "Monitoramento avançado de condições para prevenir falhas antes que ocorram."
   },
   {
     id: 4,
-    name: "Pavers de Concreto",
-    category: "pavers",
-    image: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=2070&auto=format&fit=crop",
-    description: "Pavers de concreto para pavimentação de calçadas e áreas externas."
+    name: "Treinamentos e Capacitação",
+    category: "treinamentos",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
+    description: "Programas de capacitação técnica para equipes de manutenção e operação."
   },
   {
     id: 5,
-    name: "Lajes e Pré-moldados",
-    category: "lajes",
-    image: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?q=80&w=2070&auto=format&fit=crop",
-    description: "Lajes e elementos pré-moldados de concreto para construção civil."
+    name: "Auditorias Técnicas",
+    category: "auditorias",
+    image: "https://images.unsplash.com/photo-1517462905485-5613a873be0c?q=80&w=2070&auto=format&fit=crop",
+    description: "Avaliação independente de processos e sistemas de manutenção."
   },
   {
     id: 6,
-    name: "Guias e Sarjetas",
-    category: "guias",
-    image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?q=80&w=2070&auto=format&fit=crop",
-    description: "Guias e sarjetas de concreto para infraestrutura urbana."
+    name: "Consultoria em PCM",
+    category: "pcm",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+    description: "Planejamento e controle da manutenção para otimização de recursos."
   }
 ];
 
 // Categorias
 const categories = [
-  { id: "all", name: "Todos os Produtos" },
-  { id: "blocos", name: "Blocos" },
-  { id: "postes", name: "Postes" },
-  { id: "tubos", name: "Tubos" },
-  { id: "pavers", name: "Pavers" },
-  { id: "lajes", name: "Lajes e Pré-moldados" },
-  { id: "guias", name: "Guias e Sarjetas" },
+  { id: "all", name: "Todos os Serviços" },
+  { id: "gestao", name: "Gestão de Ativos" },
+  { id: "confiabilidade", name: "Confiabilidade" },
+  { id: "preditiva", name: "Manutenção Preditiva" },
+  { id: "treinamentos", name: "Treinamentos" },
+  { id: "auditorias", name: "Auditorias" },
+  { id: "pcm", name: "PCM" },
 ];
 
 const Equipment = () => {
@@ -70,10 +70,10 @@ const Equipment = () => {
     <section className="section-padding bg-machinery-gray-light" id="equipment">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Nossos <span className="text-machinery-yellow">Produtos</span></h2>
+          <h2 className="mb-4">Nossos <span className="text-machinery-yellow">Serviços</span></h2>
           <p className="text-machinery-gray max-w-3xl mx-auto">
-            Explore nossa ampla gama de artefatos de concreto de alta qualidade projetados 
-            para construção civil, infraestrutura urbana e aplicações industriais.
+            Oferecemos soluções completas em engenharia e consultoria para otimizar 
+            a performance de seus ativos e equipamentos industriais.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ const Equipment = () => {
           ))}
         </div>
 
-        {/* Equipment Grid */}
+        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredEquipment.map((item) => (
             <div 
@@ -127,7 +127,7 @@ const Equipment = () => {
 
         <div className="text-center mt-12">
           <button className="btn-primary rounded-full">
-            Ver Todos os Produtos
+            Ver Todos os Serviços
           </button>
         </div>
       </div>

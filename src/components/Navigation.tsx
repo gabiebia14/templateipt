@@ -35,7 +35,7 @@ const Navigation = () => {
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <span className="text-white font-heading text-3xl font-bold">
-            ASPRO<span className="text-machinery-yellow">.</span>
+            IPT<span className="text-machinery-yellow">TEIXEIRA</span>
           </span>
         </Link>
 
@@ -43,14 +43,14 @@ const Navigation = () => {
         <div className="hidden lg:flex items-center gap-8">
           <ul className="flex gap-8 text-white font-medium">
             <li><Link to="/" className="hover:text-machinery-yellow transition duration-300">Home</Link></li>
-            <li><Link to="/about" className="hover:text-machinery-yellow transition duration-300">About Us</Link></li>
-            <li><Link to="/equipment" className="hover:text-machinery-yellow transition duration-300">Equipment</Link></li>
-            <li><Link to="/services" className="hover:text-machinery-yellow transition duration-300">Services</Link></li>
-            <li><Link to="/contact" className="hover:text-machinery-yellow transition duration-300">Contact</Link></li>
+            <li><Link to="/about" className="hover:text-machinery-yellow transition duration-300">Sobre</Link></li>
+            <li><Link to="/services" className="hover:text-machinery-yellow transition duration-300">Serviços</Link></li>
+            <li><Link to="/projects" className="hover:text-machinery-yellow transition duration-300">Projetos</Link></li>
+            <li><Link to="/contact" className="hover:text-machinery-yellow transition duration-300">Contato</Link></li>
           </ul>
           <div className="flex items-center gap-2 text-white">
             <Phone className="h-5 w-5 text-machinery-yellow" />
-            <span>+1 800 123 4567</span>
+            <span>(24) 2020-0370</span>
           </div>
         </div>
 
@@ -71,14 +71,14 @@ const Navigation = () => {
         <div className="container-custom py-20">
           <ul className="flex flex-col items-center gap-6 text-white text-xl font-medium">
             <li><Link to="/" onClick={toggleMenu} className="hover:text-machinery-yellow transition duration-300">Home</Link></li>
-            <li><Link to="/about" onClick={toggleMenu} className="hover:text-machinery-yellow transition duration-300">About Us</Link></li>
-            <li><Link to="/equipment" onClick={toggleMenu} className="hover:text-machinery-yellow transition duration-300">Equipment</Link></li>
-            <li><Link to="/services" onClick={toggleMenu} className="hover:text-machinery-yellow transition duration-300">Services</Link></li>
-            <li><Link to="/contact" onClick={toggleMenu} className="hover:text-machinery-yellow transition duration-300">Contact</Link></li>
+            <li><Link to="/about" onClick={toggleMenu} className="hover:text-machinery-yellow transition duration-300">Sobre</Link></li>
+            <li><Link to="/services" onClick={toggleMenu} className="hover:text-machinery-yellow transition duration-300">Serviços</Link></li>
+            <li><Link to="/projects" onClick={toggleMenu} className="hover:text-machinery-yellow transition duration-300">Projetos</Link></li>
+            <li><Link to="/contact" onClick={toggleMenu} className="hover:text-machinery-yellow transition duration-300">Contato</Link></li>
           </ul>
           <div className="flex items-center justify-center gap-2 text-white mt-10">
             <Phone className="h-5 w-5 text-machinery-yellow" />
-            <span>+1 800 123 4567</span>
+            <span>(24) 2020-0370</span>
           </div>
         </div>
       </div>

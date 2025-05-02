@@ -7,39 +7,40 @@ const Contact = () => {
     <section className="section-padding bg-white" id="contact">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Get In <span className="text-machinery-yellow">Touch</span></h2>
+          <h2 className="mb-4">Fale <span className="text-machinery-yellow">Conosco</span></h2>
           <p className="text-machinery-gray max-w-2xl mx-auto">
-            Have a question or need assistance? Contact our team and we'll be happy to help you with your machinery needs.
+            Entre em contato com nossa equipe para discutir como podemos ajudar a otimizar 
+            os processos de manutenção e gestão de ativos da sua empresa.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-machinery-gray-light p-8 rounded-lg">
-            <h3 className="mb-6">Send Us a Message</h3>
+            <h3 className="mb-6">Envie sua Mensagem</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block mb-2 font-medium text-machinery-black">
-                    Your Name
+                    Seu Nome
                   </label>
                   <input
                     type="text"
                     id="name"
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-machinery-yellow/50"
-                    placeholder="John Smith"
+                    placeholder="João Silva"
                     required
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block mb-2 font-medium text-machinery-black">
-                    Your Email
+                    Seu Email
                   </label>
                   <input
                     type="email"
                     id="email"
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-machinery-yellow/50"
-                    placeholder="john@example.com"
+                    placeholder="joao@exemplo.com"
                     required
                   />
                 </div>
@@ -47,26 +48,26 @@ const Contact = () => {
               
               <div>
                 <label htmlFor="subject" className="block mb-2 font-medium text-machinery-black">
-                  Subject
+                  Assunto
                 </label>
                 <input
                   type="text"
                   id="subject"
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-machinery-yellow/50"
-                  placeholder="How can we help you?"
+                  placeholder="Como podemos ajudar?"
                   required
                 />
               </div>
               
               <div>
                 <label htmlFor="message" className="block mb-2 font-medium text-machinery-black">
-                  Message
+                  Mensagem
                 </label>
                 <textarea
                   id="message"
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-machinery-yellow/50"
-                  placeholder="Write your message here..."
+                  placeholder="Escreva sua mensagem aqui..."
                   required
                 ></textarea>
               </div>
@@ -75,17 +76,17 @@ const Contact = () => {
                 type="submit"
                 className="btn-primary flex items-center justify-center gap-2 rounded w-full"
               >
-                Send Message <Send className="h-5 w-5" />
+                Enviar Mensagem <Send className="h-5 w-5" />
               </button>
             </form>
           </div>
 
           {/* Contact Information */}
           <div>
-            <h3 className="mb-6">Contact Information</h3>
+            <h3 className="mb-6">Informações de Contato</h3>
             <p className="text-machinery-gray mb-8">
-              Our team is ready to assist you with any questions about our equipment, 
-              services, or how we can help with your next project.
+              Nossa equipe está pronta para atender suas necessidades e esclarecer todas as suas 
+              dúvidas sobre nossos serviços de consultoria e soluções em gestão de ativos.
             </p>
             
             <div className="space-y-6">
@@ -94,9 +95,9 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-machinery-black" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-1">Our Location</h4>
+                  <h4 className="text-xl font-bold mb-1">Nossa Localização</h4>
                   <p className="text-machinery-gray">
-                    1234 Industrial Way, Construction City, CC 98765
+                    Rua Salatiel Dias Ribeiro, 647, Aero Clube, Volta Redonda - RJ
                   </p>
                 </div>
               </div>
@@ -106,10 +107,10 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-machinery-black" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-1">Call Us</h4>
+                  <h4 className="text-xl font-bold mb-1">Telefones</h4>
                   <p className="text-machinery-gray">
-                    +1 800 123 4567<br />
-                    +1 800 987 6543
+                    (24) 2020-0370<br />
+                    (24) 99241-4902
                   </p>
                 </div>
               </div>
@@ -119,10 +120,10 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-machinery-black" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-1">Email Us</h4>
+                  <h4 className="text-xl font-bold mb-1">Email</h4>
                   <p className="text-machinery-gray">
-                    info@aspromachinery.com<br />
-                    support@aspromachinery.com
+                    contato@iptteixeira.com.br<br />
+                    comercial@iptteixeira.com.br
                   </p>
                 </div>
               </div>
@@ -132,11 +133,10 @@ const Contact = () => {
                   <Clock className="h-6 w-6 text-machinery-black" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-1">Business Hours</h4>
+                  <h4 className="text-xl font-bold mb-1">Horário de Funcionamento</h4>
                   <p className="text-machinery-gray">
-                    Monday - Friday: 8:00 AM - 6:00 PM<br />
-                    Saturday: 9:00 AM - 4:00 PM<br />
-                    Sunday: Closed
+                    Segunda - Sexta: 8:00 - 18:00<br />
+                    Sábado e Domingo: Fechado
                   </p>
                 </div>
               </div>

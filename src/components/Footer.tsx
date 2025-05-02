@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -13,19 +13,17 @@ const Footer = () => {
           <div>
             <Link to="/" className="inline-block mb-6">
               <span className="text-white font-heading text-3xl font-bold">
-                ASPRO<span className="text-machinery-yellow">.</span>
+                IPT<span className="text-machinery-yellow">TEIXEIRA</span>
               </span>
             </Link>
             <p className="text-gray-300 mb-6">
-              ASPRO Machinery is a leading provider of high-quality heavy equipment and machinery 
-              for construction, mining, and industrial applications worldwide.
+              A IPT TEIXEIRA é uma empresa especializada em consultoria técnica e engenharia 
+              para gestão de ativos físicos, oferecendo soluções personalizadas para otimizar 
+              a performance dos equipamentos industriais.
             </p>
             <div className="flex gap-4">
               <a href="#" className="bg-machinery-black border border-gray-700 hover:bg-machinery-yellow hover:text-machinery-black p-2 rounded-full transition-all duration-300">
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-machinery-black border border-gray-700 hover:bg-machinery-yellow hover:text-machinery-black p-2 rounded-full transition-all duration-300">
-                <Twitter className="h-5 w-5" />
               </a>
               <a href="#" className="bg-machinery-black border border-gray-700 hover:bg-machinery-yellow hover:text-machinery-black p-2 rounded-full transition-all duration-300">
                 <Instagram className="h-5 w-5" />
@@ -39,66 +37,61 @@ const Footer = () => {
           {/* Column 2: Quick Links */}
           <div>
             <h4 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-machinery-yellow">
-              Quick Links
+              Links Rápidos
             </h4>
             <ul className="space-y-3">
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/equipment" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  Our Equipment
+                  Sobre Nós
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  Services
+                  Nossos Serviços
                 </Link>
               </li>
               <li>
                 <Link to="/projects" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  Projects
+                  Projetos
                 </Link>
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  Contact Us
+                  Contato
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Equipment */}
+          {/* Column 3: Services */}
           <div>
             <h4 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-machinery-yellow">
-              Equipment
+              Serviços
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/equipment/excavators" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  Excavators
+                <Link to="/services/asset-management" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
+                  Gestão de Ativos
                 </Link>
               </li>
               <li>
-                <Link to="/equipment/bulldozers" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  Bulldozers
+                <Link to="/services/reliability" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
+                  Engenharia de Confiabilidade
                 </Link>
               </li>
               <li>
-                <Link to="/equipment/loaders" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  Wheel Loaders
+                <Link to="/services/predictive" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
+                  Manutenção Preditiva
                 </Link>
               </li>
               <li>
-                <Link to="/equipment/cranes" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  Cranes
+                <Link to="/services/training" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
+                  Treinamentos
                 </Link>
               </li>
               <li>
-                <Link to="/equipment/trucks" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
-                  Dump Trucks
+                <Link to="/services/audits" className="text-gray-300 hover:text-machinery-yellow transition-colors duration-300">
+                  Auditorias Técnicas
                 </Link>
               </li>
             </ul>
@@ -107,22 +100,22 @@ const Footer = () => {
           {/* Column 4: Contact */}
           <div>
             <h4 className="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-machinery-yellow">
-              Contact Us
+              Contato
             </h4>
             <ul className="space-y-4">
               <li className="flex gap-3">
                 <MapPin className="h-5 w-5 text-machinery-yellow flex-shrink-0 mt-1" />
                 <span className="text-gray-300">
-                  1234 Industrial Way, Construction City, CC 98765
+                  Rua Salatiel Dias Ribeiro, 647, Aero Clube, Volta Redonda - RJ
                 </span>
               </li>
               <li className="flex gap-3">
                 <Phone className="h-5 w-5 text-machinery-yellow flex-shrink-0" />
-                <span className="text-gray-300">+1 800 123 4567</span>
+                <span className="text-gray-300">(24) 2020-0370</span>
               </li>
               <li className="flex gap-3">
                 <Mail className="h-5 w-5 text-machinery-yellow flex-shrink-0" />
-                <span className="text-gray-300">info@aspromachinery.com</span>
+                <span className="text-gray-300">contato@iptteixeira.com.br</span>
               </li>
             </ul>
           </div>
@@ -133,14 +126,14 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} ASPRO Machinery. All Rights Reserved.
+            &copy; {new Date().getFullYear()} IPT TEIXEIRA. Todos os direitos reservados.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link to="/privacy-policy" className="text-gray-400 text-sm hover:text-machinery-yellow">
-              Privacy Policy
+              Política de Privacidade
             </Link>
             <Link to="/terms-of-service" className="text-gray-400 text-sm hover:text-machinery-yellow">
-              Terms of Service
+              Termos de Serviço
             </Link>
           </div>
         </div>
